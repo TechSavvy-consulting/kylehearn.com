@@ -139,7 +139,7 @@ export default function Home() {
 
       <section className="throughline section-dark">
         <div className="section-shell throughline-grid" data-reveal>
-          <p className="section-label">The throughline</p>
+          <p className="section-label">The Common Thread</p>
           <div>
             <h2>Builder at heart.<br />Technologist by experience.<br /><em>Owner in how I think.</em></h2>
             <p>I am drawn to the problems people quietly live around: the unreliable system, the confusing vendor, the useful idea that never became a plan. My best work begins with listening, gets practical quickly, and ends with someone better equipped to move forward.</p>

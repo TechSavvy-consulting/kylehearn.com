@@ -138,7 +138,7 @@ img { display: block; max-width: 100%; }
 .portrait-note > span { color: var(--gold); font-size: 24px; }
 .portrait-note p { display: grid; gap: 3px; margin: 0; }
 .portrait-note strong { font-size: 12px; }
-.portrait-note small { color: #657087; font-size: 9px; line-height: 1.45; }
+.portrait-note small { color: #657087; font-size: 11px; line-height: 1.45; }
 .proof-strip { align-items: stretch; align-self: end; border-top: 1px solid rgba(57,44,71,.13); display: grid; grid-column: 1 / -1; grid-template-columns: repeat(3,1fr); margin-top: -12px; position: relative; z-index: 3; }
 .proof-strip > div { display: grid; gap: 5px; padding: 23px 28px 38px; }
 .proof-strip > div + div { border-left: 1px solid rgba(57,44,71,.13); }
