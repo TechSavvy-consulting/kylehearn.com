@@ -153,6 +153,43 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="wired section-light" id="wired" aria-labelledby="wired-title">
+        <div className="section-shell">
+          <div className="wired-heading" data-reveal>
+            <p className="section-label">How I&apos;m wired</p>
+            <div>
+              <h2 id="wired-title">Big-picture thinking.<br /><em>Patient listening.</em><br />Practical next steps.</h2>
+              <p>I tend to see the big picture quickly—how people, ideas, and systems connect, and where a useful next step might be hiding. But my best work begins with listening. I value candid conversation, clear ownership, and plans that turn vision into something people can actually use. The goal is not to be the loudest person in the room. It is to help the room move forward with greater clarity, confidence, and hope.</p>
+            </div>
+          </div>
+
+          <div className="wired-grid">
+            <article data-reveal>
+              <span>01</span>
+              <h3>See the pattern</h3>
+              <p>I naturally connect people, ideas, and systems—then ask why until the real opportunity becomes clearer.</p>
+            </article>
+            <article data-reveal>
+              <span>02</span>
+              <h3>Listen before leading</h3>
+              <p>People matter before problems. I try to understand what someone is experiencing before recommending what comes next.</p>
+            </article>
+            <article data-reveal>
+              <span>03</span>
+              <h3>Make it practical</h3>
+              <p>A good idea should become a clear decision, an accountable owner, and a useful next step.</p>
+            </article>
+            <article data-reveal>
+              <span>04</span>
+              <h3>Build with purpose</h3>
+              <p>I am motivated by truth, learning, cooperation, and work that leaves people better equipped than before.</p>
+            </article>
+          </div>
+
+          <p className="wired-note" data-reveal>Personality assessments might call this a mix of Commander and Coach. I think of it more simply: <strong>clarity with care.</strong></p>
+        </div>
+      </section>
+
       <section className="journey section-light" id="journey">
         <div className="section-shell">
           <div className="section-heading" data-reveal>
