@@ -233,8 +233,8 @@ export default function Home() {
           <div className="beyond-copy" data-reveal>
             <p className="section-label">Beyond the work</p>
             <h2>Faith and family keep the rest in perspective.</h2>
-            <p>I enjoy the things that make me stretch, pay attention, and keep learning—rock climbing, hiking, West Coast Swing, and bowling. Each has its own way of rewarding curiosity, patience, and steady improvement.</p>
-            <div className="interest-list"><span>Rock climbing</span><span>Hiking</span><span>West Coast Swing</span><span>Bowling</span></div>
+            <p>I enjoy the things that make me stretch, pay attention, and keep learning—rock climbing, hiking, West Coast Swing, bowling, strength training, and playing guitar. Each has its own way of rewarding curiosity, patience, and steady improvement.</p>
+            <div className="interest-list"><span>Rock climbing</span><span>Hiking</span><span>West Coast Swing</span><span>Bowling</span><span>Strength Training</span><span>Playing Guitar</span></div>
           </div>
         </div>
       </section>
