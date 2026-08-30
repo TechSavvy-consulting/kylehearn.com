@@ -39,6 +39,7 @@ const journey = [
 
 export default function Home() {
   const [contactInView, setContactInView] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
   async function handleContactSubmit(event: FormEvent<HTMLFormElement>) {
@@ -93,11 +94,34 @@ export default function Home() {
           <span><strong>Kyle Hearn</strong><small>Hope-Giving Builder</small></span>
         </a>
         <nav className="main-nav" aria-label="Main navigation">
-          <a href="#journey">Journey</a>
           <a href="#building">Building</a>
+          <a href="#journey">Journey</a>
           <a href="#identity">Identity</a>
         </nav>
         <span className="header-location">Tulsa, Oklahoma</span>
+        <div className="mobile-nav">
+          <button
+            className="mobile-nav-toggle"
+            type="button"
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-explore-menu"
+            onClick={() => setMobileMenuOpen((open) => !open)}
+          >
+            Explore <span aria-hidden="true">{mobileMenuOpen ? '×' : '＋'}</span>
+          </button>
+          <nav
+            className={`mobile-nav-menu${mobileMenuOpen ? ' mobile-nav-menu--open' : ''}`}
+            id="mobile-explore-menu"
+            aria-label="Explore this page"
+          >
+            <a href="#building" onClick={() => setMobileMenuOpen(false)}>What I&apos;m building</a>
+            <a href="#wired" onClick={() => setMobileMenuOpen(false)}>How I&apos;m wired</a>
+            <a href="#journey" onClick={() => setMobileMenuOpen(false)}>My journey</a>
+            <a href="#identity" onClick={() => setMobileMenuOpen(false)}>My identity</a>
+            <a href="#beyond" onClick={() => setMobileMenuOpen(false)}>Beyond the work</a>
+            <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+          </nav>
+        </div>
       </header>
 
       <a
@@ -105,7 +129,9 @@ export default function Home() {
         href="#contact"
         aria-label="Go to the contact form"
       >
-        <span>Let&apos;s connect</span><b>↘</b>
+        <span className="connect-label connect-label--full">Let&apos;s connect</span>
+        <span className="connect-label connect-label--mobile">Connect</span>
+        <b>↘</b>
       </a>
 
       <section className="hero" aria-labelledby="hero-title">
@@ -122,7 +148,21 @@ export default function Home() {
         <div className="hero-portrait-wrap">
           <div className="portrait-rings" aria-hidden="true" />
           <div className="portrait-window">
-            <img src="/kyle-profile.png" alt="Kyle Hearn smiling" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/kyle-sport-coat-640.webp 640w, /kyle-sport-coat-1000.webp 1000w"
+                sizes="(max-width: 780px) calc(100vw - 84px), 440px"
+              />
+              <img
+                src="/kyle-sport-coat-1000.jpg"
+                alt="Kyle Hearn smiling in a navy sport coat"
+                width="1000"
+                height="1000"
+                fetchPriority="high"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div className="portrait-note">
             <span>✦</span>
@@ -132,7 +172,7 @@ export default function Home() {
 
         <div className="proof-strip" aria-label="Career overview">
           <div><strong>Since 1998</strong><span>Building in technology</span></div>
-          <div><strong>Founder + operator</strong><span>Experience close to the work</span></div>
+          <div><strong>Built, acquired + sold</strong><span>Experience earned through ownership</span></div>
           <div><strong>Tulsa, Oklahoma</strong><span>Invested in the community</span></div>
         </div>
       </section>
@@ -150,67 +190,6 @@ export default function Home() {
           <article><span>01 · PEOPLE</span><h3>See the person</h3><p>Listen well. Tell the truth. Bring calm to the room and leave people with more clarity and confidence.</p></article>
           <article><span>02 · IDEAS</span><h3>Find the useful answer</h3><p>Connect the business need to the right next step—without letting novelty or complexity become the point.</p></article>
           <article><span>03 · TECHNOLOGY</span><h3>Build what helps</h3><p>Use IT, operations, and practical AI to remove friction and create systems people can actually rely on.</p></article>
-        </div>
-      </section>
-
-      <section className="wired section-light" id="wired" aria-labelledby="wired-title">
-        <div className="section-shell">
-          <div className="wired-heading" data-reveal>
-            <p className="section-label">How I&apos;m wired</p>
-            <div>
-              <h2 id="wired-title">Big-picture thinking.<br /><em>Patient listening.</em><br />Practical next steps.</h2>
-              <p>I tend to see the big picture quickly—how people, ideas, and systems connect, and where a useful next step might be hiding. But my best work begins with listening. I value candid conversation, clear ownership, and plans that turn vision into something people can actually use. The goal is not to be the loudest person in the room. It is to help the room move forward with greater clarity, confidence, and hope.</p>
-            </div>
-          </div>
-
-          <div className="wired-grid">
-            <article data-reveal>
-              <span>01</span>
-              <h3>See the pattern</h3>
-              <p>I naturally connect people, ideas, and systems—then ask why until the real opportunity becomes clearer.</p>
-            </article>
-            <article data-reveal>
-              <span>02</span>
-              <h3>Listen before leading</h3>
-              <p>People matter before problems. I try to understand what someone is experiencing before recommending what comes next.</p>
-            </article>
-            <article data-reveal>
-              <span>03</span>
-              <h3>Make it practical</h3>
-              <p>A good idea should become a clear decision, an accountable owner, and a useful next step.</p>
-            </article>
-            <article data-reveal>
-              <span>04</span>
-              <h3>Build with purpose</h3>
-              <p>I am motivated by truth, learning, cooperation, and work that leaves people better equipped than before.</p>
-            </article>
-          </div>
-
-          <p className="wired-note" data-reveal>Personality assessments might call this a mix of Commander and Coach. I think of it more simply: <strong>clarity with care.</strong></p>
-        </div>
-      </section>
-
-      <section className="journey section-light" id="journey">
-        <div className="section-shell">
-          <div className="section-heading" data-reveal>
-            <p className="section-label">My journey</p>
-            <h2>Nearly three decades of building, learning, and returning to what matters.</h2>
-            <p>The companies and tools have changed. The work underneath them has stayed remarkably consistent.</p>
-          </div>
-
-          <div className="timeline">
-            {journey.map((chapter, index) => (
-              <article className="timeline-row" key={chapter.year} data-reveal>
-                <div className="timeline-year"><span>{chapter.year}</span><i /></div>
-                <div className="timeline-copy">
-                  <span>{chapter.eyebrow}</span>
-                  <h3>{chapter.title}</h3>
-                  <p>{chapter.body}</p>
-                </div>
-                <span className="timeline-index">0{index + 1}</span>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -246,6 +225,67 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="wired section-light" id="wired" aria-labelledby="wired-title">
+        <div className="section-shell">
+          <div className="wired-heading" data-reveal>
+            <p className="section-label">How I&apos;m wired</p>
+            <div>
+              <h2 id="wired-title">Big-picture thinking.<br /><em>Patient listening.</em><br />Practical next steps.</h2>
+              <p>I see the big picture quickly, but my best work begins with listening. I value candid conversation, clear ownership, and turning vision into practical next steps that leave people with greater clarity and hope.</p>
+            </div>
+          </div>
+
+          <div className="wired-grid">
+            <article data-reveal>
+              <span>01</span>
+              <h3>See the pattern</h3>
+              <p>I naturally connect people, ideas, and systems—then ask why until the real opportunity becomes clearer.</p>
+            </article>
+            <article data-reveal>
+              <span>02</span>
+              <h3>Listen before leading</h3>
+              <p>People matter before problems. I try to understand what someone is experiencing before recommending what comes next.</p>
+            </article>
+            <article data-reveal>
+              <span>03</span>
+              <h3>Make it practical</h3>
+              <p>A good idea should become a clear decision, an accountable owner, and a useful next step.</p>
+            </article>
+            <article data-reveal>
+              <span>04</span>
+              <h3>Build with purpose</h3>
+              <p>I am motivated by truth, learning, cooperation, and work that leaves people better equipped than before.</p>
+            </article>
+          </div>
+
+          <p className="wired-note" data-reveal>Personality assessments might call this a mix of Commander and Coach. I think of it more simply: <strong>clarity with care.</strong></p>
+        </div>
+      </section>
+
+      <section className="journey section-paper" id="journey">
+        <div className="section-shell">
+          <div className="section-heading" data-reveal>
+            <p className="section-label">My journey</p>
+            <h2>Nearly three decades of building, learning, and returning to what matters.</h2>
+            <p>The companies and tools have changed. The work underneath them has stayed remarkably consistent.</p>
+          </div>
+
+          <div className="timeline">
+            {journey.map((chapter, index) => (
+              <article className="timeline-row" key={chapter.year} data-reveal>
+                <div className="timeline-year"><span>{chapter.year}</span><i /></div>
+                <div className="timeline-copy">
+                  <span>{chapter.eyebrow}</span>
+                  <h3>{chapter.title}</h3>
+                  <p>{chapter.body}</p>
+                </div>
+                <span className="timeline-index">0{index + 1}</span>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="identity" id="identity">
         <div className="identity-glow" aria-hidden="true" />
         <div className="section-shell identity-layout">
@@ -264,7 +304,9 @@ export default function Home() {
       <section className="beyond section-paper" id="beyond">
         <div className="section-shell beyond-layout">
           <div className="beyond-photo" data-reveal>
-            <img src="/family.jpg" alt="Kyle Hearn enjoying an evening of cards outdoors with his family" />
+            {/* A plain image keeps the static GitHub Pages export predictable while loading this below-the-fold photo lazily. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/family.jpg" alt="Kyle Hearn enjoying an evening of cards outdoors with his family" width="2048" height="1536" loading="lazy" decoding="async" />
             <span>Family time · Tulsa, Oklahoma</span>
           </div>
           <div className="beyond-copy" data-reveal>
