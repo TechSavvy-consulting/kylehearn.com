@@ -193,7 +193,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="building section-paper" id="building">
+      <section className="building section-building" id="building">
         <div className="section-shell">
           <div className="section-heading section-heading--split" data-reveal>
             <div><p className="section-label">What I&apos;m building now</p><h2>Useful work in a few different forms.</h2></div>
@@ -216,16 +216,42 @@ export default function Home() {
             </a>
 
             <a className="venture-card venture-card--ideas" href="https://www.linkedin.com/in/kylehearn/" target="_blank" rel="noreferrer" data-reveal>
-              <span className="venture-type">THINKING · SHARING · TESTING</span>
-              <div><span className="venture-number">03</span><h3>Practical tools<br />and systems</h3></div>
-              <p>Experiments, operating lessons, and honest observations about technology, AI, business ownership, and making systems work better.</p>
-              <b>Follow on LinkedIn <span>↗</span></b>
+              <span className="venture-type">BUILDING · TESTING · SHARING</span>
+              <div><span className="venture-number">03</span><h3>Ideas turned into<br />useful systems</h3></div>
+              <p>I share what I am learning from building and operating real businesses—practical lessons about technology, AI, leadership, and the systems that help people do better work.</p>
+              <b>Follow the work on LinkedIn <span>↗</span></b>
             </a>
+          </div>
+
+          <div className="credentials-panel" data-reveal>
+            <div className="credentials-intro">
+              <p className="section-label">Certified expertise</p>
+              <h3>Continued learning, grounded in real work.</h3>
+              <p>Formal training strengthens the judgment earned through decades of ownership and hands-on delivery.</p>
+              <a href="https://www.linkedin.com/in/kylehearn/details/certifications/" target="_blank" rel="noreferrer">View credentials on LinkedIn <span>↗</span></a>
+            </div>
+            <div className="credential-list" aria-label="Current professional certifications">
+              <article>
+                <span>Cybersecurity</span>
+                <strong>Fortinet NSE 1 Certified in Cybersecurity</strong>
+                <small>Fortinet · Current through 2028</small>
+              </article>
+              <article>
+                <span>Healthcare</span>
+                <strong>HIPAA for Business Associates</strong>
+                <small>HIPAA Exams · Issued 2026</small>
+              </article>
+              <article>
+                <span>Artificial intelligence</span>
+                <strong>Google AI Professional Certificate</strong>
+                <small>Google · Issued 2026</small>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="wired section-light" id="wired" aria-labelledby="wired-title">
+      <section className="wired section-wired" id="wired" aria-labelledby="wired-title">
         <div className="section-shell">
           <div className="wired-heading" data-reveal>
             <p className="section-label">How I&apos;m wired</p>
@@ -262,7 +288,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="journey section-paper" id="journey">
+      <section className="journey section-journey" id="journey">
         <div className="section-shell">
           <div className="section-heading" data-reveal>
             <p className="section-label">My journey</p>
