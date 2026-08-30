@@ -138,7 +138,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"><span>People</span><i /><span>Ideas</span><i /><span>Technology</span></p>
           <h1 id="hero-title">Technology should make life <em>clearer.</em></h1>
-          <p className="hero-lede">I&apos;m Kyle Hearn—a Tulsa entrepreneur, trusted advisor, and <strong>Hope-Giving Builder</strong>. I help people see what&apos;s possible and turn difficult problems into useful next steps.</p>
+          <p className="hero-lede">Hi, I&apos;m Kyle Hearn—a Tulsa entrepreneur, trusted advisor, and <strong>Hope-Giving Builder</strong>. I&apos;ve been building in technology since 1998, with experience founding, acquiring, growing, and selling businesses. Today I stay close to the work through TechSavvy Consulting and my exploration of practical AI, helping people turn complicated problems into clear, useful next steps. Tulsa is home, and I&apos;m deeply invested in its people and business community.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#building">See what I&apos;m building <span>↘</span></a>
             <a className="button button-quiet" href="#journey">Follow the journey <span>↓</span></a>
@@ -170,11 +170,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="proof-strip" aria-label="Career overview">
-          <div><strong>Since 1998</strong><span>Building in technology</span></div>
-          <div><strong>Built, acquired + sold</strong><span>Experience earned through ownership</span></div>
-          <div><strong>Tulsa, Oklahoma</strong><span>Invested in the community</span></div>
-        </div>
       </section>
 
       <section className="throughline section-dark">
@@ -187,9 +182,9 @@ export default function Home() {
         </div>
 
         <div className="section-shell pillars" data-reveal>
-          <article><span>01 · PEOPLE</span><h3>See the person</h3><p>Listen well. Tell the truth. Bring calm to the room and leave people with more clarity and confidence.</p></article>
-          <article><span>02 · IDEAS</span><h3>Find the useful answer</h3><p>Connect the business need to the right next step—without letting novelty or complexity become the point.</p></article>
-          <article><span>03 · TECHNOLOGY</span><h3>Build what helps</h3><p>Use IT, operations, and practical AI to remove friction and create systems people can actually rely on.</p></article>
+          <article><span>PEOPLE</span><h3>See the person</h3><p>Listen well. Tell the truth. Bring calm to the room and leave people with more clarity and confidence.</p></article>
+          <article><span>IDEAS</span><h3>Find the useful answer</h3><p>Connect the business need to the right next step—without letting novelty or complexity become the point.</p></article>
+          <article><span>TECHNOLOGY</span><h3>Build what helps</h3><p>Use IT, operations, and practical AI to remove friction and create systems people can actually rely on.</p></article>
         </div>
       </section>
 
@@ -203,21 +198,21 @@ export default function Home() {
           <div className="venture-grid">
             <a className="venture-card venture-card--featured" href="https://www.techsavvy.consulting/" target="_blank" rel="noreferrer" data-reveal>
               <span className="venture-type">OWNER · ADVISOR · OPERATOR</span>
-              <div><span className="venture-number">01</span><h3>TechSavvy<br />Consulting</h3></div>
+              <div><h3>TechSavvy<br />Consulting</h3></div>
               <p>Helping Tulsa businesses make IT simpler, safer, and more useful through responsive support, cybersecurity, Microsoft 365, and clear guidance.</p>
               <b>Visit TechSavvy <span>↗</span></b>
             </a>
 
             <a className="venture-card venture-card--ai" href="https://www.youtube.com/@YouCanMakeItWithAI" target="_blank" rel="noreferrer" data-reveal>
               <span className="venture-type">CREATOR · EXPLORER</span>
-              <div><span className="venture-number">02</span><h3>You Can Make It<br />With AI</h3></div>
+              <div><h3>You Can Make It<br />With AI</h3></div>
               <p>Showing business owners and everyday people how plain English and modern AI tools can turn useful ideas into working applications.</p>
               <b>Explore the channel <span>↗</span></b>
             </a>
 
             <a className="venture-card venture-card--ideas" href="https://www.linkedin.com/in/kylehearn/" target="_blank" rel="noreferrer" data-reveal>
               <span className="venture-type">BUILDING · TESTING · SHARING</span>
-              <div><span className="venture-number">03</span><h3>Ideas turned into<br />useful systems</h3></div>
+              <div><h3>Ideas turned into<br />useful systems</h3></div>
               <p>I share what I am learning from building and operating real businesses—practical lessons about technology, AI, leadership, and the systems that help people do better work.</p>
               <b>Follow the work on LinkedIn <span>↗</span></b>
             </a>
@@ -263,22 +258,18 @@ export default function Home() {
 
           <div className="wired-grid">
             <article data-reveal>
-              <span>01</span>
               <h3>See the pattern</h3>
               <p>I naturally connect people, ideas, and systems—then ask why until the real opportunity becomes clearer.</p>
             </article>
             <article data-reveal>
-              <span>02</span>
               <h3>Listen before leading</h3>
               <p>People matter before problems. I try to understand what someone is experiencing before recommending what comes next.</p>
             </article>
             <article data-reveal>
-              <span>03</span>
               <h3>Make it practical</h3>
               <p>A good idea should become a clear decision, an accountable owner, and a useful next step.</p>
             </article>
             <article data-reveal>
-              <span>04</span>
               <h3>Build with purpose</h3>
               <p>I am motivated by truth, learning, cooperation, and work that leaves people better equipped than before.</p>
             </article>
