@@ -138,7 +138,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"><span>Faith</span><i /><span>Family</span><i /><span>Community</span><i /><span>Building</span></p>
           <h1 id="hero-title">I believe in what people can <em>become.</em></h1>
-          <p className="hero-lede">Hi, I&apos;m Kyle Hearn—a follower of Jesus, husband, father, Tulsa entrepreneur, and <strong>Hope-Giving Builder</strong>. I started Mentor Technologies at 17 and spent the years that followed growing, acquiring, merging, and eventually selling the company I built. Today I serve through TechSavvy Consulting, the You Can Make It With AI channel, mentoring, and work in my community. I love helping people recognize what is possible, take ownership, and build something that matters.</p>
+          <p className="hero-lede">Hi, I&apos;m Kyle Hearn. I follow Jesus, love my family, and have spent most of my life building—companies, systems, opportunities, and sometimes the confidence someone needs to begin. I started my first company at 17, but the work that has meant the most is recognizing potential in people, saying it out loud, and helping them do something real with it. Today I serve through TechSavvy Consulting, You Can Make It With AI, mentoring, and the Tulsa community I call home. That is what <strong>Hope-Giving Builder</strong> means to me.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#building">See how I serve <span>↘</span></a>
             <a className="button button-quiet" href="#journey">Follow my journey <span>↓</span></a>
