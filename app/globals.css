@@ -226,7 +226,7 @@ img { display: block; height: auto; max-width: 100%; }
 .credentials-intro > p:not(.section-label) { color: #5d6574; font-size: 16px; line-height: 1.68; margin: 0; max-width: 410px; }
 .credentials-intro a { border-bottom: 1px solid rgba(96,49,139,.38); color: var(--purple); display: inline-flex; font-size: 14px; font-weight: 750; gap: 28px; margin-top: 25px; padding-bottom: 7px; }
 .credential-list { border-top: 1px solid rgba(54,55,70,.16); display: grid; }
-.credential-list article { align-items: center; border-bottom: 1px solid rgba(54,55,70,.16); display: grid; gap: 18px; grid-template-columns: 132px 1fr 170px; padding: 23px 0; }
+.credential-list article { align-items: center; border-bottom: 1px solid rgba(54,55,70,.16); display: grid; gap: 18px; grid-template-columns: minmax(145px,.85fr) minmax(0,1fr) 170px; padding: 23px 0; }
 .credential-list span { color: #7a517f; font: 700 10px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
 .credential-list strong { font-size: 16px; line-height: 1.35; }
 .credential-list small { color: #5d6574; font-size: 13px; line-height: 1.45; text-align: right; }
@@ -295,7 +295,7 @@ img { display: block; height: auto; max-width: 100%; }
   .portrait-note { left: -10px; }
   .beyond-layout, .identity-layout { gap: 65px; }
   .credentials-panel { gap: 38px; grid-template-columns: .9fr 1.1fr; }
-  .credential-list article { gap: 12px; grid-template-columns: 110px 1fr; }
+  .credential-list article { gap: 12px; grid-template-columns: minmax(145px,.55fr) minmax(0,1fr); }
   .credential-list small { grid-column: 2; text-align: left; }
 }
 
