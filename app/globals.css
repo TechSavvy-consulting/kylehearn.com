@@ -104,7 +104,7 @@ img { display: block; height: auto; max-width: 100%; }
   gap: 38px 62px;
   grid-template-columns: 1.08fr .92fr;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: none;
   min-height: calc(100vh - 82px);
   overflow: hidden;
   padding: 76px max(48px, calc((100% - 1240px)/2 + 48px)) 0;

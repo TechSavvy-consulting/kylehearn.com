@@ -8,13 +8,13 @@ const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin']
 export const metadata: Metadata = {
   metadataBase: new URL('https://kylehearn.com'),
   title: 'Kyle Hearn · Hope-Giving Builder',
-  description: 'Kyle Hearn is a Tulsa entrepreneur, trusted advisor, and Hope-Giving Builder working at the intersection of people, ideas, and technology.',
+  description: 'Kyle Hearn is a Tulsa entrepreneur and Hope-Giving Builder serving Jesus, family, community, and people through companies, mentoring, and practical teaching.',
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Kyle Hearn · Hope-Giving Builder',
-    description: 'A Tulsa entrepreneur and trusted advisor building at the intersection of people, ideas, and technology.',
+    description: 'A Tulsa entrepreneur building companies, encouraging people, and serving his community through faith, experience, and practical teaching.',
     url: '/',
     siteName: 'Kyle Hearn',
     locale: 'en_US',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Kyle Hearn · Hope-Giving Builder',
-    description: 'A Tulsa entrepreneur and trusted advisor building at the intersection of people, ideas, and technology.',
+    description: 'A Tulsa entrepreneur building companies, encouraging people, and serving his community through faith, experience, and practical teaching.',
     images: ['/og.png'],
   },
 };
