@@ -15,25 +15,25 @@ const journey = [
     year: '1998',
     eyebrow: 'Starting early',
     title: 'Mentor Technologies at 17',
-    body: 'I started Mentor Technologies in Tulsa while I was still a teenager. I knew technology, but running the company taught me the deeper work: earn trust, care for the customer, keep learning, and take responsibility when something matters.',
+    body: 'I started Mentor Technologies in Tulsa in 1998. Running a company became my education in customers, teams, and the everyday decisions that come with ownership.',
   },
   {
     year: 'GROWTH',
     eyebrow: 'Building and combining',
     title: 'Organic growth, three acquisitions, and a merger',
-    body: 'I grew Mentor organically, purchased three technology companies, merged a phone and cabling company into the operation, and built Reflection Backup Solutions. Those pieces were eventually brought together as one company.',
+    body: 'Alongside organic growth, I purchased three technology companies, merged a phone and cabling company into the operation, and built Reflection Backup Solutions.',
   },
   {
     year: 'EXIT',
     eyebrow: 'Completing a chapter',
     title: 'Selling what I had built',
-    body: 'I sold the combined business I had spent years building. The exit mattered, but the greater education came from serving customers, leading a team, integrating companies, and carrying responsibility when the answer was not obvious.',
+    body: 'Mentor, Reflection Backup Solutions, and the acquired and merged operations came together as one business. I then sold that combined company.',
   },
   {
     year: 'TODAY',
-    eyebrow: 'Serving in new ways',
-    title: 'TechSavvy, teaching, and community',
-    body: 'Today I build TechSavvy to serve as real IT staff for growing businesses, share what I am learning through You Can Make It With AI, encourage other builders, and invest in my family and community.',
+    eyebrow: 'A new chapter',
+    title: 'Starting TechSavvy Consulting',
+    body: 'After the sale, I started TechSavvy Consulting, bringing the experience of growing and integrating companies into a new chapter of business ownership.',
   },
 ];
 
@@ -138,7 +138,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"><span>Faith</span><i /><span>Family</span><i /><span>Community</span><i /><span>Building</span></p>
           <h1 id="hero-title">I believe in what people can <em>become.</em></h1>
-          <p className="hero-lede">Hi, I&apos;m Kyle Hearn. I follow Jesus, love my family, and have spent most of my life building—companies, systems, opportunities, and sometimes the confidence someone needs to begin. I started my first company at 17, but the work that has meant the most is recognizing potential in people, saying it out loud, and helping them do something real with it. Today I serve through TechSavvy Consulting, You Can Make It With AI, mentoring, and the Tulsa community I call home. That is what <strong>Hope-Giving Builder</strong> means to me.</p>
+          <p className="hero-lede">Hi, I&apos;m Kyle Hearn—a husband, father, and entrepreneur in Tulsa. I follow Jesus, love my family, and bring a lifelong curiosity to technology and business. These days, you&apos;ll find me growing TechSavvy Consulting, exploring AI, and sharing what I learn. I&apos;m a <strong>Hope-Giving Builder</strong>, and this is a little of my story.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#building">See how I serve <span>↘</span></a>
             <a className="button button-quiet" href="#journey">Follow my journey <span>↓</span></a>
@@ -176,44 +176,38 @@ export default function Home() {
         <div className="section-shell throughline-grid" data-reveal>
           <p className="section-label">What drives me</p>
           <div>
-            <h2>Service is the thread running through <em>everything I build.</em></h2>
-            <p>I serve Jesus first, then my family, my community, and the people entrusted to me. That service takes different forms: building a company that helps businesses grow, encouraging someone to become an owner, sharing what I have learned through YouTube, or simply showing up when someone needs help. I love the work because I love seeing people gain confidence, take ownership, and move into what they are capable of.</p>
+            <h2>My faith shapes <em>my priorities.</em></h2>
+            <p>I serve Jesus first. That starts with how I show up for my family and extends to the way I run a business and participate in Tulsa&apos;s community. I want the people who know me personally to recognize the same person they meet at work.</p>
           </div>
-        </div>
-
-        <div className="section-shell pillars" data-reveal>
-          <article><span>FAITH</span><h3>Serve Jesus first</h3><p>Faith gives my work its purpose and shapes how I treat the people involved. The goal is not simply to succeed; it is to serve faithfully with what I have been given.</p></article>
-          <article><span>PEOPLE</span><h3>See what others can become</h3><p>Some of the most meaningful moments in my life have been encouraging people to become owners. Several now lead successful companies of their own.</p></article>
-          <article><span>BUILDING</span><h3>Turn hope into something real</h3><p>Hope becomes useful when it turns into a decision, a business, a team, a tool, or a next step someone can own.</p></article>
         </div>
       </section>
 
       <section className="building section-building" id="building">
         <div className="section-shell">
-          <div className="section-heading section-heading--split" data-reveal>
-            <div><p className="section-label">How I serve today</p><h2>One calling, expressed in different ways.</h2></div>
-            <p>The businesses, the channel, mentoring, and community involvement are not separate identities. They are ways I can use what I have learned to help someone else move forward.</p>
+          <div className="section-heading" data-reveal>
+            <p className="section-label">How I serve today</p>
+            <h2>Where I put my experience to work.</h2>
           </div>
 
           <div className="venture-grid">
             <a className="venture-card venture-card--featured" href="https://www.techsavvy.consulting/" target="_blank" rel="noreferrer" data-reveal>
               <span className="venture-type">SERVICE · OWNERSHIP · COMMUNITY</span>
               <div><h3>TechSavvy<br />Consulting</h3></div>
-              <p>Building a Tulsa IT company that works like part of the client&apos;s staff—not a distant outsourced vendor. We learn the business, care about its growth, and take responsibility for the technology behind it.</p>
+              <p>I&apos;m growing a Tulsa IT company that feels like part of your staff. We get to know your business, look after its technology, and care about where you want it to go.</p>
               <b>Visit TechSavvy <span>↗</span></b>
             </a>
 
             <a className="venture-card venture-card--ai" href="https://www.youtube.com/@YouCanMakeItWithAI" target="_blank" rel="noreferrer" data-reveal>
               <span className="venture-type">TEACHING · CREATIVITY · ACCESS</span>
               <div><h3>You Can Make It<br />With AI</h3></div>
-              <p>Giving people a practical way to explore AI and turn plain-English ideas into working tools. I share the process because useful knowledge should create more builders, not just more spectators.</p>
+              <p>I explore what people can create with plain-English instructions and modern AI tools. The channel shares examples and the steps behind them, so you can try things for yourself.</p>
               <b>Explore the channel <span>↗</span></b>
             </a>
 
             <a className="venture-card venture-card--ideas" href="https://www.linkedin.com/in/kylehearn/" target="_blank" rel="noreferrer" data-reveal>
-              <span className="venture-type">MENTORING · SHARING · ENCOURAGING</span>
-              <div><h3>Helping other builders<br />move forward</h3></div>
-              <p>I share lessons from building, buying, merging, and selling companies—and encourage people when I see a business owner or builder in them before they see it themselves.</p>
+              <span className="venture-type">MENTORING · BUSINESS · CONVERSATION</span>
+              <div><h3>Conversations &amp;<br />shared experience</h3></div>
+              <p>Mentoring gives me a place to talk through decisions with other owners. On LinkedIn, I share observations about business, leadership, and technology.</p>
               <b>Follow along on LinkedIn <span>↗</span></b>
             </a>
           </div>
@@ -221,8 +215,8 @@ export default function Home() {
           <div className="credentials-panel" data-reveal>
             <div className="credentials-intro">
               <p className="section-label">Continued learning</p>
-              <h3>Keep learning so I can serve responsibly.</h3>
-              <p>Experience matters, but service also requires humility. New risks, tools, and responsibilities deserve current training and careful judgment.</p>
+              <h3>Keeping my knowledge current.</h3>
+              <p>Recent training covers cybersecurity fundamentals, HIPAA responsibilities, and practical AI.</p>
               <a href="https://www.linkedin.com/in/kylehearn/details/certifications/" target="_blank" rel="noreferrer">View credentials on LinkedIn <span>↗</span></a>
             </div>
             <div className="credential-list" aria-label="Current professional certifications">
@@ -251,31 +245,40 @@ export default function Home() {
           <div className="wired-heading" data-reveal>
             <p className="section-label">How I&apos;m wired</p>
             <div>
-              <h2 id="wired-title">I see possibilities—and then <em>I start building.</em></h2>
-              <p>I tend to notice connections between people, ideas, and systems. I ask questions until I understand what matters, then look for a way to turn the answer into something another person can use. I care deeply about the people involved and take responsibility seriously.</p>
+              <h2 id="wired-title">Commander drive.<br /><em>Coach approach.</em></h2>
+              <p>My personal assessments describe both a desire to accomplish things and a patient, relational way of working with people. Here is what each one adds to that picture.</p>
             </div>
           </div>
 
-          <div className="wired-grid">
+          <div className="assessment-grid">
             <article data-reveal>
-              <h3>Notice the potential</h3>
-              <p>I often see ability in people before they are ready to name it themselves. Encouraging that possibility is one of the ways I most naturally serve.</p>
+              <p className="assessment-source">16Personalities · ENTJ-A</p>
+              <h3>Commander</h3>
+              <p>This result reflects an outgoing, organized approach to goals and decisions. It offers language for the part of me that likes a challenge, thinks ahead, and wants to move from discussion to action.</p>
             </article>
             <article data-reveal>
-              <h3>Give ideas a structure</h3>
-              <p>An idea becomes useful when it has an owner, a first step, and enough structure to survive beyond the original conversation.</p>
+              <p className="assessment-source">DISC &amp; Motivators</p>
+              <h3>Coach</h3>
+              <p>My DISC report emphasizes listening, patience, and warmth. It describes someone who can stay with a complex project and help people work together, without needing to be the center of attention.</p>
             </article>
             <article data-reveal>
-              <h3>Care enough to be candid</h3>
-              <p>Serving someone sometimes means encouragement; sometimes it means saying the honest thing and staying present while they decide what to do with it.</p>
-            </article>
-            <article data-reveal>
-              <h3>Build beyond myself</h3>
-              <p>I do not want to remain the permanent bottleneck. I want to build companies, systems, and people that can grow beyond my direct involvement.</p>
+              <p className="assessment-source">Enneagram · 3w2</p>
+              <h3>Achievement &amp; connection</h3>
+              <p>My test suggests Type 3 with a Two wing: a focus on achievement alongside an interest in people and connection. It invites me to reflect on what motivates my ambition and how I define success.</p>
             </article>
           </div>
 
-          <p className="wired-note" data-reveal>Assessments have described me as both Commander and Coach. The Coach fits the way I listen and encourage; the Commander fits the part of me that wants to turn a good conversation into <strong>something real.</strong></p>
+          <div className="assessment-reflection" data-reveal>
+            <div>
+              <h3>Talking with me</h3>
+              <p>My DISC report recommends candid, patient conversation, time to connect, written details, and an agreed next step. That is a useful picture of the collaboration I value.</p>
+            </div>
+            <div>
+              <h3>Questions worth keeping</h3>
+              <p>The Coach report flags overcommitting and hesitating on difficult decisions. Alongside the achievement focus of 3w2, it gives me questions to revisit: Am I being clear? Do I have capacity? Am I letting results define my worth?</p>
+            </div>
+          </div>
+          <p className="assessment-note">I use these assessments for reflection. They describe tendencies, with room for experience and the people who know me to challenge the results.</p>
         </div>
       </section>
 
@@ -283,8 +286,7 @@ export default function Home() {
         <div className="section-shell">
           <div className="section-heading" data-reveal>
             <p className="section-label">My journey</p>
-            <h2>I learned business by taking responsibility for one.</h2>
-            <p>Starting at 17 meant learning in public. Growth, acquisitions, merging teams, and selling taught me that what you build matters most when it genuinely serves people.</p>
+            <h2>The path from Mentor to TechSavvy.</h2>
           </div>
 
           <div className="timeline">
@@ -311,9 +313,9 @@ export default function Home() {
             <h2>Hope came before <em>the name.</em></h2>
           </div>
           <div className="identity-copy" data-reveal>
-            <p className="identity-lede"><strong>Hope-Giving Builder is the identity I believe Christ gave me.</strong> Jamie Winship&apos;s teaching on true identity gave me a reason to search myself honestly, pray, and listen for an answer instead of choosing a title that merely sounded good.</p>
-            <p>When I looked for the pattern, I saw it. More than once, I recognized ability in people and encouraged them to start businesses of their own; several now lead successful companies. That is the hope-giving part: helping someone see what God may be forming in them before they fully see it themselves.</p>
-            <p>Builder comes from the life I have spent creating companies, teams, systems, and opportunities. Christ is the source of the identity. Serving people is how I try to live it.</p>
+            <p className="identity-lede"><strong>Hope-Giving Builder is the identity I believe Christ gave me.</strong> Jamie Winship&apos;s teaching on true identity prompted me to search myself, pray, and listen for an answer.</p>
+            <p>Looking back, I noticed a pattern: I had recognized ability in people and encouraged them to start businesses of their own. Several now lead successful companies. Their stories helped me understand the hope-giving part—seeing what God may be forming in someone before they fully see it themselves.</p>
+            <p>The builder part came from creating my own companies. Together, those experiences gave me language for something I believe Christ was already showing me.</p>
             <a href="https://www.identityexchange.com/" target="_blank" rel="noreferrer">Learn about Identity Exchange <span>↗</span></a>
           </div>
         </div>
@@ -329,8 +331,8 @@ export default function Home() {
           </div>
           <div className="beyond-copy" data-reveal>
             <p className="section-label">Beyond the work</p>
-            <h2>The people I serve first are at home.</h2>
-            <p>Faith, family, and community give the rest of the work its meaning. Outside the office, I enjoy the things that make me stretch, pay attention, and keep learning—rock climbing, hiking, West Coast Swing, bowling, strength training, and playing guitar.</p>
+            <h2>Away from the desk.</h2>
+            <p>I love time with my family, including an evening of cards in the backyard. I also enjoy getting outside, staying active, dancing, and making music.</p>
             <div className="interest-list"><span>Rock climbing</span><span>Hiking</span><span>West Coast Swing</span><span>Bowling</span><span>Strength Training</span><span>Playing Guitar</span></div>
           </div>
         </div>
@@ -340,14 +342,14 @@ export default function Home() {
         <div className="section-shell contact-layout">
           <div className="contact-intro" data-reveal>
             <p className="section-label">Let&apos;s connect</p>
-            <h2>Tell me what you&apos;re building—or what you believe could be.</h2>
-            <p>I enjoy meeting people who care deeply about their work, their community, or an idea they cannot shake. Share a little context and I&apos;ll read it personally.</p>
+            <h2>I&apos;d enjoy hearing from you.</h2>
+            <p>Have a question, want to compare notes, or just say hello? Send me a message—I read it personally.</p>
           </div>
           <form className="contact-form" action="https://formspree.io/f/xppzzbog" method="POST" onSubmit={handleContactSubmit} data-formspree-connected="true" data-reveal>
             <input type="hidden" name="_subject" value="New message from KyleHearn.com" />
             <label><span>Your name</span><input name="name" type="text" autoComplete="name" required placeholder="How should I address you?" /></label>
             <label><span>Email</span><input name="email" type="email" autoComplete="email" required placeholder="you@example.com" /></label>
-            <label><span>What are you building, solving, or considering?</span><textarea name="message" rows={5} required placeholder="A little context is plenty." /></label>
+            <label><span>What&apos;s on your mind?</span><textarea name="message" rows={5} required placeholder="A little context is plenty." /></label>
             <label className="honeypot" aria-hidden="true"><span>Leave this empty</span><input name="_gotcha" type="text" tabIndex={-1} autoComplete="off" /></label>
             <div className="form-submit">
               <button type="submit" disabled={formStatus === 'submitting'}>{formStatus === 'submitting' ? 'Sending…' : 'Send message'} <b>↗</b></button>
