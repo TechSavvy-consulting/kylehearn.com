@@ -190,12 +190,16 @@ export default function Home() {
           </div>
 
           <div className="venture-grid">
-            <a className="venture-card venture-card--featured" href="https://www.techsavvy.consulting/" target="_blank" rel="noreferrer" data-reveal>
+            <article className="venture-card venture-card--featured" data-reveal>
               <span className="venture-type">SERVICE · OWNERSHIP · COMMUNITY</span>
               <div><h3>TechSavvy<br />Consulting</h3></div>
               <p>I&apos;m growing a Tulsa IT company that feels like part of your staff. We get to know your business, look after its technology, and care about where you want it to go.</p>
-              <b>Visit TechSavvy <span>↗</span></b>
-            </a>
+              <nav className="venture-links" aria-label="TechSavvy website and business profiles">
+                <a href="https://www.techsavvy.consulting/" target="_blank" rel="noreferrer">Visit TechSavvy <span aria-hidden="true">↗</span></a>
+                <a href="https://www.linkedin.com/company/techsavvy-consulting/" target="_blank" rel="noreferrer" aria-label="TechSavvy Consulting on LinkedIn">LinkedIn <span aria-hidden="true">↗</span></a>
+                <a href="https://www.facebook.com/techsavvyok/" target="_blank" rel="noreferrer" aria-label="TechSavvy Consulting on Facebook">Facebook <span aria-hidden="true">↗</span></a>
+              </nav>
+            </article>
 
             <a className="venture-card venture-card--ai" href="https://www.youtube.com/@YouCanMakeItWithAI" target="_blank" rel="noreferrer" data-reveal>
               <span className="venture-type">TEACHING · CREATIVITY · ACCESS</span>
@@ -204,12 +208,15 @@ export default function Home() {
               <b>Explore the channel <span>↗</span></b>
             </a>
 
-            <a className="venture-card venture-card--ideas" href="https://www.linkedin.com/in/kylehearn/" target="_blank" rel="noreferrer" data-reveal>
+            <article className="venture-card venture-card--ideas" data-reveal>
               <span className="venture-type">MENTORING · BUSINESS · CONVERSATION</span>
               <div><h3>Conversations &amp;<br />shared experience</h3></div>
               <p>Mentoring gives me a place to talk through decisions with other owners. On LinkedIn, I share observations about business, leadership, and technology.</p>
-              <b>Follow along on LinkedIn <span>↗</span></b>
-            </a>
+              <nav className="venture-links" aria-label="Kyle Hearn's personal profiles">
+                <a href="https://www.linkedin.com/in/kylehearn/" target="_blank" rel="noreferrer">Personal LinkedIn <span aria-hidden="true">↗</span></a>
+                <a href="https://www.facebook.com/1kylehearn/" target="_blank" rel="noreferrer">Personal Facebook <span aria-hidden="true">↗</span></a>
+              </nav>
+            </article>
           </div>
 
           <div className="credentials-panel" data-reveal>
@@ -259,26 +266,19 @@ export default function Home() {
             <article data-reveal>
               <p className="assessment-source">DISC &amp; Motivators</p>
               <h3>Coach</h3>
-              <p>My DISC report emphasizes listening, patience, and warmth. It describes someone who can stay with a complex project and help people work together, without needing to be the center of attention.</p>
+              <p>Listening, patience, and warmth stand out in my DISC report. It describes someone who can stay with a complex project and help people work together, without needing to be the center of attention.</p>
             </article>
             <article data-reveal>
               <p className="assessment-source">Enneagram · 3w2</p>
               <h3>Achievement &amp; connection</h3>
-              <p>My test suggests Type 3 with a Two wing: a focus on achievement alongside an interest in people and connection. It invites me to reflect on what motivates my ambition and how I define success.</p>
+              <p>The Enneagram result suggests Type 3 with a Two wing: a focus on achievement alongside an interest in people and connection. It invites me to reflect on what motivates my ambition and how I define success.</p>
             </article>
           </div>
 
           <div className="assessment-reflection" data-reveal>
-            <div>
-              <h3>Talking with me</h3>
-              <p>My DISC report recommends candid, patient conversation, time to connect, written details, and an agreed next step. That is a useful picture of the collaboration I value.</p>
-            </div>
-            <div>
-              <h3>Questions worth keeping</h3>
-              <p>The Coach report flags overcommitting and hesitating on difficult decisions. Alongside the achievement focus of 3w2, it gives me questions to revisit: Am I being clear? Do I have capacity? Am I letting results define my worth?</p>
-            </div>
+            <h3>How these fit together</h3>
+            <p>Together, these results suggest a combination of strategic thinking, warmth, and determination. The Commander brings direction, the Coach brings patience, and 3w2 connects achievement with relationships. That combination points toward leadership that can set a course, involve people, and follow through. These assessments give me useful language for understanding my tendencies and continuing to grow.</p>
           </div>
-          <p className="assessment-note">I use these assessments for reflection. They describe tendencies, with room for experience and the people who know me to challenge the results.</p>
         </div>
       </section>
 
@@ -290,7 +290,7 @@ export default function Home() {
           </div>
 
           <div className="timeline">
-            {journey.map((chapter, index) => (
+            {journey.map((chapter) => (
               <article className="timeline-row" key={chapter.year} data-reveal>
                 <div className="timeline-year"><span>{chapter.year}</span><i /></div>
                 <div className="timeline-copy">
@@ -298,7 +298,6 @@ export default function Home() {
                   <h3>{chapter.title}</h3>
                   <p>{chapter.body}</p>
                 </div>
-                <span className="timeline-index">0{index + 1}</span>
               </article>
             ))}
           </div>
@@ -331,8 +330,8 @@ export default function Home() {
           </div>
           <div className="beyond-copy" data-reveal>
             <p className="section-label">Beyond the work</p>
-            <h2>Away from the desk.</h2>
-            <p>I love time with my family, including an evening of cards in the backyard. I also enjoy getting outside, staying active, dancing, and making music.</p>
+            <h2>The people I serve first are at home.</h2>
+            <p>Faith, family, and community give the rest of the work its meaning. Outside the office, I enjoy the things that make me stretch, pay attention, and keep learning—rock climbing, hiking, West Coast Swing, bowling, strength training, and playing guitar.</p>
             <div className="interest-list"><span>Rock climbing</span><span>Hiking</span><span>West Coast Swing</span><span>Bowling</span><span>Strength Training</span><span>Playing Guitar</span></div>
           </div>
         </div>
@@ -342,14 +341,14 @@ export default function Home() {
         <div className="section-shell contact-layout">
           <div className="contact-intro" data-reveal>
             <p className="section-label">Let&apos;s connect</p>
-            <h2>I&apos;d enjoy hearing from you.</h2>
-            <p>Have a question, want to compare notes, or just say hello? Send me a message—I read it personally.</p>
+            <h2>Tell me what you&apos;re building—or what you believe could be.</h2>
+            <p>I enjoy meeting people who care deeply about their work, their community, or an idea they cannot shake. Share a little context and I&apos;ll read it personally.</p>
           </div>
           <form className="contact-form" action="https://formspree.io/f/xppzzbog" method="POST" onSubmit={handleContactSubmit} data-formspree-connected="true" data-reveal>
             <input type="hidden" name="_subject" value="New message from KyleHearn.com" />
             <label><span>Your name</span><input name="name" type="text" autoComplete="name" required placeholder="How should I address you?" /></label>
             <label><span>Email</span><input name="email" type="email" autoComplete="email" required placeholder="you@example.com" /></label>
-            <label><span>What&apos;s on your mind?</span><textarea name="message" rows={5} required placeholder="A little context is plenty." /></label>
+            <label><span>What are you building, solving, or considering?</span><textarea name="message" rows={5} required placeholder="A little context is plenty." /></label>
             <label className="honeypot" aria-hidden="true"><span>Leave this empty</span><input name="_gotcha" type="text" tabIndex={-1} autoComplete="off" /></label>
             <div className="form-submit">
               <button type="submit" disabled={formStatus === 'submitting'}>{formStatus === 'submitting' ? 'Sending…' : 'Send message'} <b>↗</b></button>
